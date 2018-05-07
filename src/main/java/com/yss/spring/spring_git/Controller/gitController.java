@@ -10,6 +10,9 @@
  */
 package com.yss.spring.spring_git.Controller;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * 〈一句话功能简述〉<br> 
  * 〈〉
@@ -18,6 +21,11 @@ package com.yss.spring.spring_git.Controller;
  * @create 2018-05-04
  * @since 1.0.0
  */
+@RestController
 public class gitController {
 
+    @RequestMapping("/getString")
+    public String getString(){
+        return "Success";
+    }
 }
